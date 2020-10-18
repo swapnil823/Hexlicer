@@ -54,7 +54,6 @@ function rainbow(numOfSteps, step) {
 
 var selections = [];
 
-
 function hex2bin(hex) {
   return parseInt(hex, 16)
     .toString(2)
@@ -128,6 +127,7 @@ $("#input").on("paste keydown keyup", function() {
 
 $("#Endian").on("change select", function() {
   $("#input").keydown();
+  endianNess = $("#Endian")[0][0].selected;
 });
 
 $("#clearAll").on("click", function() {
@@ -148,22 +148,20 @@ $("table td").dblclick(function(e) {
 //Frame building logic
 var frame = {};
 
-
 // create the editor
-        const container = document.getElementById("jsoneditor")
-        const options = {}
-        const editor = new JSONEditor(container, options)
+const container = document.getElementById("jsoneditor");
+const options = {};
+const editor = new JSONEditor(container, options);
 
+editor.set(frame);
 
-        editor.set(frame)
-
-        // get json
-        const updatedJson = editor.get()
+// get json
+const updatedJson = editor.get();
 
 function recordFrame(frm, to) {
   fieldName = "Field" + sectionNo;
   //$("#frame").append("<div>" + fieldName + " " + frm + ":" + to + "</div>");
-  editor.set(frame)
+  editor.set(frame);
 
   frame[fieldName] = [frm, to];
 }
