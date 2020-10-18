@@ -1,1 +1,106 @@
-Hello World!
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+	<!-- jquery-ui -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/@simonwep/selection-js/dist/selection.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.1.1/jsoneditor.min.css" />
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		.right {
+			height: 50vh !important;
+			overflow: hidden;
+			overflow-y: scroll;
+			text-align: center;
+			padding: 0;
+		}
+
+		html body {
+			//background-color: #333 !important;
+			height: 100% !important;
+		}
+	</style>
+</head>
+
+<body class="overflow-hidden bg-light h-100">
+	<nav class="navbar sticky-top navbar-dark indigo">
+		<a class="navbar-brand" href="#">Example</a>
+	</nav>
+	<div class="container-fluid h-100">
+		<div class="row h-100 ">
+			<div class="col col-10">
+				<div class="row ">
+					<div class="w-100">
+						<input id="input" class="input form-control form-control-lg"></input>
+					</div>
+					<div class="table-responsive h-100">
+						<table id="bittable"
+							class="table table-sm table-hover table-borderless table-striped text-center animated fadeIn">
+							<thead class="thead-light">
+							</thead>
+							<tbody class="animated fadeIn">
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="row h-100 card bg-light border-top border-primary" id="resizeme">
+					<div class="col text-center ">
+						<div id="jsoneditor" style="width: 400px; height: 400px;"></div>
+					</div>
+					<div class="col text-center ">
+						<div>sdfsdfsd</div>
+					</div>
+				</div>
+			</div>
+			<div class="col border-left border-primary card bg-light">
+				<div class="row stylish-color w-100 border rounded">
+					<div id="status" class="status text text-center w-100 right"></div>
+				</div>
+				<div class="row">
+					<button id="clearAll" type="button" class="btn btn-danger">clear</button>
+				</div>
+				<div class="row">
+					<select id="Endian" class="browser-default custom-select">
+            <option value="0" >Little Endian</option>
+            <option value="1" selected>Big Endian</option>
+          </select>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js">
+</script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<!-- jsoneditor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/9.1.1/jsoneditor.min.js"></script>
+
+<script src="script.js"></script>
+<script>
+
+</script>
+
+</html>
