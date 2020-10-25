@@ -84,6 +84,7 @@ $("#input").val("FEDCBA9876543210");
 
 $("#input").on("paste keydown keyup", function() {
   val = $("#input").val();
+  val = val.replace(/[_ ]/g,'')
 
   const container = document.querySelector("tbody");
   container.innerHTML = "";
